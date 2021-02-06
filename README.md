@@ -17,6 +17,7 @@ It is a production tracking system developed for small or medium sized enterpris
 - Settings & Contact screen UI
 - Intro screen (UI & Backend)
 - APIs integration & Backend
+- Dark & Light mode
 
 ## Completed Screens
 <div class="row">
