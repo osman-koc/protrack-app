@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:protrack/screens/welcome.dart';
 import 'package:protrack/constants/color_constants.dart';
+import 'package:protrack/screens/splash.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: WelcomeScreen(),
+      home: SplashScreen(),
     );
   }
 }

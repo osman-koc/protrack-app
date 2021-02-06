@@ -1,4 +1,4 @@
-package com.example.protrack
+package com.osmankoc.textrack
 
 import io.flutter.embedding.android.FlutterActivity
 
