@@ -19,19 +19,29 @@ class LoadingWidget extends StatefulWidget {
 class _LoadingWidgetState extends State<LoadingWidget>
     with TickerProviderStateMixin {
   AnimationController animationController;
+  Timer _timer;
   double _progressVal = 0.0;
 
   @override
   void initState() {
+    _timer = new Timer.periodic(
+      Duration(seconds: 1),
+      (Timer timer) => setState(
+        () {
+          updateProgress();
+        },
+      ),
+    );
+
     animationController =
         AnimationController(duration: new Duration(seconds: 2), vsync: this);
     animationController.repeat();
-    startTimer();
     super.initState();
   }
 
   @override
   void dispose() {
+    _timer.cancel();
     animationController.dispose();
     super.dispose();
   }
@@ -51,19 +61,11 @@ class _LoadingWidgetState extends State<LoadingWidget>
     );
   }
 
-  void startTimer() {
-    new Timer.periodic(
-      Duration(seconds: 1),
-      (Timer timer) => setState(
-        () {
-          if (_progressVal == 1.0) {
-            _progressVal = 0.1;
-            //timer.cancel();
-          } else {
-            _progressVal += 0.2;
-          }
-        },
-      ),
-    );
+  void updateProgress() {
+    if (_progressVal == 1.0) {
+      _progressVal = 0.1;
+    } else {
+      _progressVal += 0.2;
+    }
   }
 }

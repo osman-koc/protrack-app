@@ -3,9 +3,13 @@
 It is a production tracking system developed for small or medium sized enterprises. As a result of entering the incoming products into the system and transferring the work steps, a job report can be received between the desired dates. In addition, it will contain the income-expense module.
 
 ## ✨ Features
+- Splash screen ✓
+- Loading screen ✓
 - Welcome screen UI ✓
 - Login screen UI ✓
 - Signup screen UI ✓
+- Firebase connect ✓
+- Login & Signup with Firebase ✓
 - Dashboard screen UI
 - Work list screen UI 
 - Work detail screen UI
@@ -15,8 +19,8 @@ It is a production tracking system developed for small or medium sized enterpris
 - Income statement screen (create & update) UI
 - Profile screen UI
 - Settings & Contact screen UI
-- Intro screen (UI & Backend)
 - APIs integration & Backend
+- Change Language
 - Dark & Light mode
 
 ## Completed Screens

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:protrack/constants/user_constants.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -26,7 +27,10 @@ class _FirstScreenState extends State<FirstScreen> {
       appBar: AppBar(title: Text('Appbar')),
       body: Center(
         child: Column(
-          children: [Text('Test sayfa')],
+          children: [
+            Text('Test sayfa'),
+            Text(getFirebaseUser().email ?? 'yok')
+          ],
         ),
       ),
     );
