@@ -6,7 +6,8 @@ import 'package:protrack/components/login/background.dart';
 import 'package:protrack/components/rounded_button.dart';
 import 'package:protrack/components/rounded_input_field.dart';
 import 'package:protrack/components/rounded_password_field.dart';
-import 'package:protrack/constants/toaster.dart';
+import 'package:protrack/constants/assets/svg_constants.dart';
+import 'package:protrack/extensions/toaster.dart';
 import 'package:protrack/screens/home.dart';
 import 'package:protrack/screens/signup.dart';
 import 'package:firebase_auth/firebase_auth.dart' as fA;
@@ -43,7 +44,7 @@ class _LoginBodyState extends State<LoginBody> {
             ),
             SizedBox(height: size.height * 0.03),
             SvgPicture.asset(
-              "assets/icons/login.svg",
+              SvgConst.login,
               height: size.height * 0.35,
             ),
             SizedBox(height: size.height * 0.03),

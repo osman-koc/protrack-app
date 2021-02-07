@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
-import 'package:protrack/constants/toaster.dart';
+import 'package:protrack/constants/assets/svg_constants.dart';
+import 'package:protrack/extensions/toaster.dart';
 import 'package:protrack/screens/home.dart';
 import 'package:protrack/screens/login.dart';
 import 'package:protrack/components/signup/background.dart';
@@ -44,7 +45,7 @@ class _SignupBodyState extends State<SignupBody> {
             ),
             SizedBox(height: size.height * 0.03),
             SvgPicture.asset(
-              "assets/icons/signup.svg",
+              SvgConst.signup,
               height: size.height * 0.35,
             ),
             RoundedInputField(
@@ -96,15 +97,15 @@ class _SignupBodyState extends State<SignupBody> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 SocalIcon(
-                  iconSrc: "assets/icons/facebook.svg",
+                  iconSrc: SvgConst.facebook,
                   press: () {},
                 ),
                 SocalIcon(
-                  iconSrc: "assets/icons/twitter.svg",
+                  iconSrc: SvgConst.twitter,
                   press: () {},
                 ),
                 SocalIcon(
-                  iconSrc: "assets/icons/google-plus.svg",
+                  iconSrc: SvgConst.googlePlus,
                   press: () {},
                 ),
               ],

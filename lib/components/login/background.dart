@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:protrack/constants/assets/png_constants.dart';
 
 class Background extends StatelessWidget {
   final Widget child;
@@ -20,7 +21,7 @@ class Background extends StatelessWidget {
             top: 0,
             left: 0,
             child: Image.asset(
-              "assets/images/main_top.png",
+              PngConst.mainTop,
               width: size.width * 0.35,
             ),
           ),
@@ -28,7 +29,7 @@ class Background extends StatelessWidget {
             bottom: 0,
             right: 0,
             child: Image.asset(
-              "assets/images/login_bottom.png",
+              PngConst.loginBottom,
               width: size.width * 0.4,
             ),
           ),
