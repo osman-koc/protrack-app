@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:protrack/constants/assets/svg_constants.dart';
 import 'package:protrack/screens/login.dart';
 import 'package:protrack/screens/signup.dart';
 import 'package:protrack/components/welcome/background.dart';
@@ -36,7 +37,7 @@ class _WelcomeBodyState extends State<WelcomeBody> {
             ),
             SizedBox(height: size.height * 0.05),
             SvgPicture.asset(
-              "assets/icons/chat.svg",
+              SvgConst.chat,
               height: size.height * 0.45,
             ),
             SizedBox(height: size.height * 0.05),
