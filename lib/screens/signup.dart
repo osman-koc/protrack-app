@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
 import 'package:protrack/constants/assets/svg_constants.dart';
-import 'package:protrack/extensions/toaster.dart';
+import 'package:protrack/util/toaster.dart';
 import 'package:protrack/screens/home.dart';
 import 'package:protrack/screens/login.dart';
 import 'package:protrack/components/signup/background.dart';

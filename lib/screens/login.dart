@@ -7,7 +7,7 @@ import 'package:protrack/components/rounded_button.dart';
 import 'package:protrack/components/rounded_input_field.dart';
 import 'package:protrack/components/rounded_password_field.dart';
 import 'package:protrack/constants/assets/svg_constants.dart';
-import 'package:protrack/extensions/toaster.dart';
+import 'package:protrack/util/toaster.dart';
 import 'package:protrack/screens/home.dart';
 import 'package:protrack/screens/signup.dart';
 import 'package:firebase_auth/firebase_auth.dart' as fA;

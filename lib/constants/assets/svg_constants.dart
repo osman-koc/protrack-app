@@ -4,4 +4,5 @@ class SvgConst {
   static const String twitter = "assets/icons/twitter.svg";
   static const String googlePlus = "assets/icons/google-plus.svg";
   static const String login = "assets/icons/login.svg";
+  static const String chat = "assets/icons/chat.svg";
 }

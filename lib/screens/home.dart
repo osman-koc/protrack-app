@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:protrack/constants/user_constants.dart';
+import 'package:protrack/util/firebase_user.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
